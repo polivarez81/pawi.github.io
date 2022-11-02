@@ -1,0 +1,227 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            
+            .container {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), transparent), url(background2.png);
+                background-size: cover;
+                background-position: center;
+                padding: 0 8%;
+                position: relative;
+            }
+            
+            .social {
+                width: 20px;
+            }
+            
+            .Social-media {
+                padding: 12px 0 12px 62px;
+            }
+            
+            nav {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0px 0;
+            }
+            
+            .logo {
+                width: 120px;
+                cursor: pointer;
+            }
+            
+            nav ul {
+                flex: 1;
+                text-align: right;
+                padding-right: 30px;
+            }
+            
+            nav ul li {
+                display: inline-block;
+                list-style: none;
+                margin: px 20px;
+            }
+            
+            nav ul a {
+                color: White;
+                text-decoration: relative;
+                position: relative;
+                text-decoration: none;
+                font-weight: bolder;
+                text-shadow: 4px 4 black;
+            }
+            
+            nav ul li a::after {
+                content: '';
+                width: 50%;
+                height: 3px;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(185, 184, 192, 0.151);
+                transition: width 0.3s;
+            }
+            
+            nav ul li a:hover::after {
+                width: 50%;
+            }
+            
+            .text-box {
+                color: gray;
+                position: absolute;
+                bottom: 8%;
+            }
+            
+            .text-box p {
+                font-size: 20px;
+                font-weight: 600;
+                position: relative;
+            }
+            
+            .text-box h1 {
+                font-size: 100px;
+                line-height: 100x;
+                margin-left: -100ppx;
+                position: relative;
+                color: transparent;
+                -webkit-text-stroke: 1px steelblue;
+                background: url(back.png);
+                -webkit-background-clip: text;
+                background-position: 0 0;
+                animation: back 20s linear infinite;
+            }
+            
+            @keyframes back {
+                100% {
+                    background-position: 2000px 0;
+                }
+            }
+            
+            .text-box h3 {
+                font-size: 30px;
+                font-weight: 600;
+                position: relative;
+                color: transparent;
+                -webkit-text-stroke: 1px red;
+                background: url(back.png);
+                -webkit-background-clip: text;
+                background-position: 0 0;
+                animation: back 20s linear infinite;
+                -webkit-animation: back 20s linear infinite;
+            }
+            
+            @keyframes back {
+                100% {
+                    background-position: 2000px 0;
+                }
+            }
+            
+            h2 {
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                line-height: 1.4;
+                font-size: 18px;
+                font-weight: lighter;
+                text-align: left;
+                background: url(background3.png)
+            }
+            
+            li {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                line-height: 1.4;
+                font-size: 20px;
+                font-weight: lighter;
+                text-align: left;
+                background: url(background3.png)
+            }
+            
+            body {
+                background-color: silver;
+                background-image: url(background.png);
+                background-position: center;
+                background-repeat: none;
+            }
+            
+            .hero {
+                width: 100%;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            form {
+                width: 90%;
+                max-width: 600px;
+            }
+            
+            .input-group {
+                margin-bottom: 30px;
+                position: relative;
+            }
+            
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                outline: 0;
+                border: 1px solid black;
+                color: black bold;
+                background: transparent;
+                font-size: 15px;
+            }
+            
+            label {
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 10px;
+                color: gray;
+                cursor: text;
+                background: transparent;
+                transition: 0.2s;
+            }
+            
+            button {
+                padding: 10px 0;
+                color: black;
+                outline: none;
+                background: transparent;
+                border: 1px solid black;
+                width: 100%;
+                cursor: pointer;
+            }
+            
+            input:focus~label,
+            input:valid~label,
+            textarea:focus~label,
+            textarea:valid~label {
+                top: -35px;
+                font-size: 12px;
+            }
+            
+            .row {
+                align-items: center;
+                justify-content: space-around;
+                
+            }
+            
+            .row .input-group {
+                flex-basis: 30%;
+            }
+            
+            footer {
+                height: 100%;
+            }
